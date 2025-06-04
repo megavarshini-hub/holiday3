@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    int arr[100]; // enough to hold 100 numbers
+
+    scanf("%d", &n); // read number count
+
+    for(i = 0; i < n; i++) {
+        scanf("%d", &arr[i]); // read each number into array
+    }
+
+    for(i = n - 1; i >= 0; i--) {
+        printf("%d ", arr[i]); // print in reverse
+    }
+
+    return 0;
+} 
